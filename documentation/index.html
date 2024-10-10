@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Technical_Documentation(python)</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#About_Python">About Python</a></li>
+            <li><a class="nav-link" href="#Design">Design</a></li>
+            <li><a class="nav-link" href="#History">History</a></li>
+            <li><a class="nav-link" href="#Programming_Examples">Programming Examples</a></li>
+            <li><a class="nav-link" href="#Uses">Uses</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="About_Python" >
+            <header>About Python</header>
+            <p>Python is a high-level, general-purpose programming language.</p>
+            <p>Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+            <p>To download Python, you need to:</p>
+            <ol>
+                <li>Go to the official site of Python (www.python.org).</li>
+                <li>Move to the Download for Windows section.</li>
+                <li>Select the version required by you and click on Download.</li>
+                <li>Open the python installer package.</li>
+                <li>Start codin'!</li>
+            </ol>
+        </section>
+        <section class="main-section" id="Design">
+            <header>Design</header>
+            <p>Python is dynamically typed and garbage-collected.</p>
+            <p>It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming.</p>
+            <p>It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+        </section>
+        <section class="main-section" id="History">
+            <header>History</header>
+            <p>Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.</p>
+            <p>Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions.</p>
+            <p>Python 2.7.18, released in 2020, was the last release of Python 2.</p>
+        </section>
+        <section class="main-section" id="Programming_Examples">
+            <header>Programming Examples</header>
+            <p>"Hello, World!" program:</p>
+            <pre>
+                <code>
+                    print('Hello, world!')
+                </code>
+            </pre>
+            <p>Program to calculate the factorial of a positive integer:</p>
+            <pre>
+                <code>
+                    n = int(input('Type a number, and its factorial will be printed: '))
+                    if n < 0:
+                    raise ValueError('You must enter a non-negative integer')factorial = 1
+                    for i in range(2, n + 1):factorial *= i
+                    print(factorial)
+                </code>
+            </pre>
+            <p>Check if a number is prime:</p>
+            <pre>
+                <code>
+                    def is_prime(num):
+                    if num <= 1:
+                    return False
+                    for i in range(2, int(num**0.5) + 1):
+                    if num % i == 0:
+                    return False
+                    return True
+
+                   # Example usage:
+                   print(is_prime(17))  # Output: True
+                   print(is_prime(10))  # Output: False
+                </code>
+            </pre>
+                <p>Calculate the factorial of a number:</p>
+                <pre>
+                    <code>
+                        def factorial(n):
+                        if n == 0:
+                        return 1
+                        return n * factorial(n - 1)
+
+                        # Example usage:
+                        print(factorial(5))  # Output: 120
+                    </code>
+                </pre>
+                <p>Generate a random password:</p>
+                <pre>
+                    <code>
+                        import random
+                        import string
+
+                        def generate_password(length=10):
+                        characters = string.ascii_letters + string.digits + string.punctuation
+                        return ''.join(random.choice(characters) for _ in range(length))
+
+                        # Example usage:
+                        print(generate_password())  # Output: something like "R#7p2!kFvT"
+                    </code>
+                </pre>
+        </section>
+        <section class="main-section" id="Uses">
+            <header>Uses</header>
+            <ul>
+            <li>Python can serve as a scripting language for web applications, e.g. via mod_wsgi for the Apache webserver.</li>
+            <li>Python is commonly used in artificial intelligence projects and machine learning projects with the help of libraries like TensorFlow.</li>
+            <li>Python is often used for natural language processing.</li>
+            <li>The combination of Python and Prolog has proved to be particularly useful for AI applications.</li>
+            <li>Python can also be used for graphical user interface (GUI) by using libraries like Tkinter.</li>
+            </ul>
+        </section>
+        <footer>
+            <p>For more info visit<a target="_blank" href="https://en.wikipedia.org/wiki/Python_(programming_language)#"> Wikipedia</a></p>
+        </footer>
+    </main>
+</body>
+</html>
